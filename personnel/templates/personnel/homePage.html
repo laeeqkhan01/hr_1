@@ -1,15 +1,15 @@
 <html>
 <head>
-  <title>Fictitious company - 1</title>
+  <title>Fictitious company</title>
 </head>
 
 <body>
-  <h1>Grand Fititious Company - 2</h1>
+  <h1>Grand Fititious Company</h1>
   <h2>Here is our great team</h2>
   <!-- {{ allWorkers }} -->
   {% for worker in allWorkers %}
-    <b>{{ worker.name }}</b> <br>
-    Works in {{ worker.dept }} <br>
+    <a href="{% url 'worker_detail' pk=worker.pk %}"><b>{{ worker.name }}</b></a>   <br>
+    {{ worker.dept }} <br>
     <br>
   {% endfor %}
 </body>

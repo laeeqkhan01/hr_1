@@ -9,6 +9,7 @@
     Age       : {{ wrkrDetail.age    }} <br>
     Department: {{ wrkrDetail.dept   }} <br>
     Salary    : {{ wrkrDetail.salary }} <br>
+    <a href="{% url 'worker_edit_info' pk=wrkrDetail.pk %}">Edit Info</a>
   </div>
 </body>
 </html>

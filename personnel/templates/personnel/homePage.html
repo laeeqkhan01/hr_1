@@ -7,6 +7,8 @@
   <h1>Grand Fititious Company</h1>
   <h2>Here is our great team</h2>
   <!-- {{ allWorkers }} -->
+  <a href="{% url 'new_worker' %}">Add an employee</a> <br><br>
+
   {% for worker in allWorkers %}
     <a href="{% url 'worker_detail' pk=worker.pk %}"><b>{{ worker.name }}</b></a>   <br>
     {{ worker.dept }} <br>
